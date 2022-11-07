@@ -1,50 +1,36 @@
-.miboton {
-    background-color: #525251!important;
-    border-radius: 5px;
-    font-size: 17px;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 6px 18px;
-    border: inherit;
-    
+table.scroll {
+    width: 20%; /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+    border: 2px solid black;
 }
- 
-.miboton, .btn-chico, .btn-mediano, .btn-grande, .miboton:link, .miboton:visited {
-    color: #FFFFFF;
-    background-color: #525251;
+
+table.scroll tbody,
+table.scroll thead tr { display: block; }
+
+table.scroll tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: scroll;
 }
- 
-.btn-chico {
-    font-size: 1rem;
-    display: inline-block;
-    width: calc(50% - 20px);
-    padding: 10px;
-    margin: 10px;
-    background-color: #5d6bea!important;
-    border-radius: 5px;    
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 6px 18px;
+
+table.scroll tbody td,
+table.scroll thead th {
+    width: 140px;
+    border: 1px solid black;
 }
- 
-.btn-mediano {
-    font-size: 1rem;
-    display: inline-block;
-    width: calc(50% - 20px);
-    padding: 10px;
-    margin: 10px;
-    background-color: #79dd74!important;
-    border-radius: 5px;    
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 6px 18px;
-} 
- 
-.btn-grande {
-    font-size: 1rem;
-    display: inline-block;
-    width: calc(50% - 20px);
-    padding: 10px;
-    margin: 10px;
-    background-color: #525251!important;
-    border-radius: 5px;    
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 6px 18px;
+
+table.scroll thead th:last-child {
+    width: 156px; /* 140px + 16px scrollbar width */
+}
+
+thead tr th { 
+    height: 30px;
+    line-height: 30px;
+    /*text-align: left;*/
+}
+
+tbody { border-top: 2px solid black; }
+
+tbody td:last-child, thead th:last-child {
+    border-right: none !important;
 }
