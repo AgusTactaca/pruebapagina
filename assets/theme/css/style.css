@@ -974,13 +974,13 @@ u-table table {
   border-collapse: collapse;
   
 }
-table {
+/* table {
   border-collapse: separate;
   text-indent: initial;
-  /*border-spacing: 1px;*/
-}
-table {
-  /* display: table; */
+  border-spacing: 1px;
+} */
+/* table {
+  display: table;
   border-collapse: separate;
   box-sizing: border-box;
   text-indent: initial;
@@ -992,4 +992,20 @@ table {
 td {
   border-color: black;
   border-width: 1px;
+} */
+td {
+  border-color: black;
+  border-width: 1px;
+  min-width: 130px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  min-width: 80%;
+  table-layout: fixed;
+  display: block;
+  overflow-x: auto;
 }
